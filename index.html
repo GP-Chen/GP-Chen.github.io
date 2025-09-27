@@ -65,9 +65,9 @@
       </li>
       
       <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#Education"
+        <a aria-label="Navigate to the Research section" href="#Research"
           class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
+            class="mdi-social-school small"></i><span>Research</span></a>
       </li>
 
       <li class="bold">
@@ -131,9 +131,9 @@
   <nav class="hide-on-large only">
     <ul id="slide-out" class="side-nav">
       <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#Education"
+        <a aria-label="Navigate to the Research section" href="#Research"
           class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
+            class="mdi-social-school small"></i><span>Research</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Publications section" href="#Publications" class="waves-effect waves-dark teal-text"><i
@@ -169,9 +169,18 @@
               <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
               <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
               <h5>I am a postdoctoral researcher at Imperial College London, working with <a href="https://profiles.imperial.ac.uk/d.gunduz" target="_blank">Prof. Deniz Gündüz</a>. 
-                My research interests include information theory, reinforcement learning, implicit communication, 
-                intelligent cyber-physical systems, and wireless communications and networking.</h5>
+                I obtained my PhD degree from The Chinese University of Hong Kong in 2023, under the supervision of 
+                <a href="https://www.ie.cuhk.edu.hk/faculty/liew-soung-chang/" target="_blank">Prof. Soung Chang Liew</a>. Prior to that, I obtained my Master’s degree from Southeast University in 2019 
+                and my Bachelor’s degree from the University of Electronic Science and Technology of China in 2016. </h5>
             </div>
+            <h5>My research interests lie at the intersection of communication, control, and machine learning. 
+              At the core of my work is a fundamental question: How does the interplay between information and control/decision-making 
+              shape the performance, efficiency, and robustness of intelligent cyber-physical systems? 
+              I explore this question from both communication and control perspectives, drawing on tools from information theory, 
+              control theory, Markov decision processes, reinforcement/machine learning, and optimization.
+            </h5>
+            </div>
+            
             <div class="social">
               <a href="https://www.linkedin.com/in/gongpu-chen-042282276/" target="_blank">
                 <button class="icon-btn linkedin">
@@ -203,9 +212,9 @@
     </section>
 
 
-    <!-- Second Section: Education -->
-    <section id="Education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
+    <!-- Second Section: Research -->
+    <section id="Research" class="section scrollspy">
+      <h3 class="page-title white-text teal">Research</h3>
       <div class="container">
 
         <!-- Latest Education -->
@@ -219,20 +228,17 @@
               <!-- <div class="col s12 m10"> -->
               <div class="col s12 m10">
                 <p>
-                  <span class="card-title"><a href="https://www.cuhk.edu.hk/" target="_blank"
-                      class="teal-text hoverline">The Chinese University of Hong Kong</a></span>
+                  <span class="card-title">Communication for control/decision-making</span>
                 </p>
-                <p> <b>Ph.D.</b> in Information Engineering</p>
-                <p> <b>Supervisor: </b> <a href="https://www.ie.cuhk.edu.hk/faculty/liew-soung-chang/" target="_blank">Prof. Soung Chang Liew</a></p>
-                <p> 
-                <b>Thesis: </b> Two Real-time Performance Metrics for Communication Networks: Analysis and Algorithms
+                A characteristic feature of CPS is the tight coupling between the cyber and physical spaces. 
+                As a result of this coupling, the timeliness and usefulness of data in such systems usually 
+                degrade neither linearly nor monotonically over time; instead, they depend intricately on the underlying physical dynamics.
                 </p>
               </div>
             </div>
           
           </div>
           <div class="card-action">
-            <span>August 2019 - July 2023 | Hong Kong SAR, China</span>
           </div>
         </div>
 
@@ -247,21 +253,17 @@
               <!-- <div class="col s12 m10"> -->
               <div class="col s12 m10">
                 <p>
-                  <span class="card-title"><a href="https://www.seu.edu.cn/" target="_blank"
-                      class="teal-text hoverline">Southeast University</a></span>
+                  <span class="card-title">Control under communication constraints</span>
                 </p>
-                <p> <b> Master</b> in Control Science and Engineering</p>
-                <p> <b>Supervisor:</b> Prof. Xianghui Cao and Prof. Changyin Sun</p>
-                <p> 
-                <b>Thesis: </b> On Optimal Scheduling Methods for Industrial WirelessHART Networks
+                Developing control and decision-making algorithms that remain robust and efficient under resource-constrained communication 
+                is another focus of my research. This challenge is increasingly critical as the number of devices in CPS and IoT systems grows, 
+                generating heterogeneous and unpredictable data traffic that makes it difficult to ensure reliable and deterministic transmissions for control tasks.
                 </p>
               </div>
             </div>
             
           </div>
-          <div class="card-action">
-            <span>September 2016 - July 2019 | Nanjing, China</span>
-          </div>
+          
         </div>
 
         <div class="card">
@@ -274,21 +276,19 @@
               <!-- <div class="col s12 m10"> -->
               <div class="col s12 m10">
                 <p>
-                  <span class="card-title"><a href="https://www.uestc.edu.cn/" target="_blank"
-                      class="teal-text hoverline">University of Electronic Science and Technology of China</a></span>
+                  <span class="card-title">Implicit communication in control systems</span>
                 </p>
-                <p> <b>Bachelor</b> in Automation Engineering</p>
-                <p><b>Supervisor:</b> Prof. Xiaoming Peng</p>
-                <p> 
-                <b>Thesis: </b> Depth Map Generation for Binocular Images
+                Motivated by the implicit communication observed in nature and human interactions, we developed a novel framework that 
+                allows communication in control systems without relying on explicit communication channels. 
+                The key idea is to intentionally deviate from the optimal control policy to encode information into the control input, 
+                which can then be decoded by a receiver observing the system state. 
+                This introduces a fundamental tradeoff between control and communication performance.
                 </p>
               </div>
             </div>
             
           </div>
-          <div class="card-action">
-            <span>September 2012 - July 2016 | Chengdu, China</span>
-          </div>
+          
         </div>
 
 
