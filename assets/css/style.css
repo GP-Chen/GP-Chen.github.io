@@ -309,12 +309,18 @@ h3 {
 }
 
 .full-height {
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center; 
 }
 
+@media only screen and (max-width: 600px) {
+  .full-height {
+    display: block; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 /* Original */
 
 /* #intro.section {
