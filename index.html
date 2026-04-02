@@ -242,15 +242,16 @@
     flex-shrink: 0;
   }
   .avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #d6daf5 0%, #c8e6f5 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border: 1px solid var(--border);
+  width: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  }
+
+  .avatar img {
+  width: 100%;
+  height: auto;
+  display: block;
   }
   .avatar svg { opacity: 0.4; }
   .avatar-caption {
@@ -734,7 +735,7 @@
     </div>
     <div class="avatar-wrap">
       <div class="avatar">
-        <img src="images/Gongpu.jpg" alt="Gongpu Chen", width="128" height="128">
+        <img src="images/Gongpu.jpg" alt="Gongpu Chen">
       </div>
       <p class="avatar-caption">Research Associate<br>Imperial College London</p>
       <div class="avatar-links">
