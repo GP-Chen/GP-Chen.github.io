@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>GossipOpt — Gongpu Chen</title>
+<title>RMAB — Gongpu Chen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
@@ -824,8 +824,11 @@
   <div class="project-hero">
     <a class="back-link" href="../index.html#projects">← Research</a>
     <div class="project-hero-icon">📡</div>
-    <h1>GossipOpt</h1>
-    <p class="project-hero-sub">Decentralized Optimization over Gossip Networks</p>
+    <h1>Restless Multi-armed Bandits</h1>
+    <p class="project-hero-sub"> Restless multi-armed bandits (RMABs) are a widely used framework for sequential decision-making, 
+      with applications in many fields. Their solution, however, is hindered by the exponentially growing state space and the combinatorial action space. 
+      As a result, designing efficient planning and learning algorithms for RMABs remains a long-standing challenge.
+ </p>
     <p class="project-hero-tldr">Convergence-guaranteed decentralized optimization over gossip communication networks with adversarial link failures.</p>
     <div class="hero-links">
       <a class="btn btn-ghost" href="#">GitHub</a>
@@ -839,26 +842,70 @@
 
 <div class="shell">
   <div style="padding: 48px 0 180px;">
-    <p class="md-edit-hint">// 编辑下方 markdown 变量即可更新页面内容</p>
     <div class="md-content" id="md-body"></div>
   </div>
 
   <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border);">
     <h2 style="font-family:var(--serif);font-size:1.35rem;font-weight:400;letter-spacing:-0.01em;margin-bottom:1.4rem;">Related Publications</h2>
     <div class="pub-list">
-          <div class="pub-item">
-            <span class="pub-year">2023</span>
-            <div class="pub-body">
-              <div class="pub-title">Communication-Optimal Algorithms for Distributed Convex Optimization</div>
-              <div class="pub-authors"><strong>G. Chen</strong>, R. Patel, S. Johansson</div>
-              <div class="pub-venue">ICLR 2023 · Kigali, Rwanda</div>
-              <div class="pub-links">
-                <a class="pub-link" data-type="doi" href="#">DOI</a>
-            <a class="pub-link" data-type="arxiv" href="#">arXiv</a>
-            <a class="pub-link" data-type="slides" href="#">Slides</a>
-              </div>
-            </div>
+        <div class="pub-item">
+        <span class="pub-year">2026</span>
+        <div class="pub-body">
+          <div class="pub-title">GINO-Q: Learning an asymptotically optimal index policy for restless multi-armed bandits</div>
+          <div class="pub-authors"><strong>Gongpu Chen</strong>, Soung Chang Liew, and Deniz Gündüz</div>
+          <div class="pub-venue">AAAI 2026 · Singapore</div>
+          <div class="pub-links">
+            <a class="pub-link" data-type="doi"    href="https://ojs.aaai.org/index.php/AAAI/article/view/39088">DOI</a>
+            <a class="pub-link" data-type="arxiv"  href="https://arxiv.org/abs/2408.09882">arXiv</a>
+            <a class="pub-link" data-type="slides" href="/slides/AAAI2026GINOQ.pdf">Slides</a>
+            <a class="pub-link" data-type="talk"   href="https://underline.io/lecture/142885-gino-q-learning-an-asymptotically-optimal-index-policy-for-restless-multi-armed-bandits">Talk</a>
           </div>
+          <div class="pub-tags">
+            <span class="tag tag-accent">Oral Presentation</span>
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">Restless Multi-armed Bandits</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-year">2023</span>
+        <div class="pub-body">
+          <div class="pub-title">An index policy for minimizing the uncertainty-of-information of Markov sources</div>
+          <div class="pub-authors"><strong>Gongpu Chen</strong> and Soung Chang Liew</div>
+          <div class="pub-venue">IEEE Transactions on Information Theory, vol. 70, no. 1, pp. 698-721</div>
+          <div class="pub-links">
+            <a class="pub-link" data-type="doi"   href="https://ieeexplore.ieee.org/abstract/document/10260280">DOI</a>
+            <a class="pub-link" data-type="arxiv" href="https://arxiv.org/abs/2212.02752">arXiv</a>
+            <a class="pub-link" data-type="slides" href="slides/UoI.pdf">Slides</a>
+          </div>
+          <div class="pub-tags">
+            <span class="tag">Communication Network</span>
+            <span class="tag">Information Freshness</span>
+            <span class="tag">Restless Multi-armed Bandits</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-year">2022</span>
+        <div class="pub-body">
+          <div class="pub-title">Uncertainty-of-Information Scheduling: A Restless Multiarmed Bandit Framework</div>
+          <div class="pub-authors"><strong>Gongpu Chen</strong>, Soung Chang Liew, and Yulin Shao</div>
+          <div class="pub-venue">IEEE Transactions on Information Theory, vol. 68, no. 9, pp. 6151-6173</div>
+          <div class="pub-links">
+            <a class="pub-link" data-type="doi"   href="https://ieeexplore.ieee.org/abstract/document/9781393">DOI</a>
+            <a class="pub-link" data-type="arxiv" href="https://arxiv.org/abs/2102.06384">arXiv</a>
+          </div>
+          <div class="pub-tags">
+            <span class="tag">Communication Network</span>
+            <span class="tag">Information Freshness</span>
+            <span class="tag">Restless Multi-armed Bandits</span>
+          </div>
+        </div>
+      </div>
+
+      
     </div>
   </div>
 </div>
@@ -866,44 +913,17 @@
 <script>
 const markdownContent = `## Overview
 
-GossipOpt studies optimization in fully decentralized settings where nodes communicate only with immediate neighbors and links may fail unpredictably.
 
 ## Problem Formulation
 
-Each node $i \\in [n]$ holds local function $f_i$. The global problem is:
 
-$$
-\\min_{x \\in \\mathbb{R}^d} \\frac{1}{n} \\sum_{i=1}^{n} f_i(x)
-$$
 
-Communication follows a time-varying graph $\\mathcal{G}_t = ([n], \\mathcal{E}_t)$ where each edge $(i,j)$ fails independently with probability $p$.
+## The Gain index policy
+**Theorem (Asymptotical Optimality).**
 
-## Algorithm
 
-At each round $t$, node $i$ updates:
-
-$$
-x_i^{t+1} = \\sum_{j \\in \\mathcal{N}_i^t} W_{ij}^t \\, x_j^t - \\eta \\nabla f_i(x_i^t)
-$$
-
-where $W^t$ is the gossip matrix of $\\mathcal{G}_t$.
-
-## Convergence Guarantee
-
-**Theorem.** Under link failure probability $p \\leq 0.4$, GossipOpt converges to a stationary point at rate:
-
-$$
-\\frac{1}{T}\\sum_{t=1}^T \\mathbb{E}\\|\\nabla f(x^t)\\|^2 \\leq O\\!\\left(\\frac{1}{\\sqrt{T}}\\right)
-$$
-
-## Usage
-
-\`\`\`python
-from gossipopt import GossipSGD
-
-optimizer = GossipSGD(model, topology="random", failure_prob=0.2)
-optimizer.step(local_loss)
-\`\`\`
+## Reinforcement Learning for RMABs
+ 
 `;
 document.getElementById('md-body').innerHTML = marked.parse(markdownContent);
 if (window.MathJax) {
@@ -915,7 +935,7 @@ if (window.MathJax) {
 
 <footer style="border-top: 1px solid var(--border); padding: 2rem 0;">
   <div style="max-width:860px; margin:0 auto; padding: 0 2rem; display:flex; justify-content:space-between; align-items:center; font-family:var(--mono); font-size:16px; color:var(--ink-light); letter-spacing:0.04em;">
-    <span>© 2025 Gongpu Chen</span>
+    <span>© 2026 Gongpu Chen</span>
     <span><a href="../index.html" style="color:var(--ink-light);text-decoration:none;font-family:var(--mono);font-size:16px;">← Back to homepage</a></span>
   </div>
 </footer>
