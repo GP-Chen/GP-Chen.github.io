@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>SketchML — Gongpu Chen</title>
+<title>IOMDP — Gongpu Chen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
@@ -824,9 +824,12 @@
   <div class="project-hero">
     <a class="back-link" href="../index.html#projects">← Research</a>
     <div class="project-hero-icon">🧠</div>
-    <h1>SketchML</h1>
-    <p class="project-hero-sub">Sub-Linear Memory Training via Randomized Sketching</p>
-    <p class="project-hero-tldr">Randomized sketching methods for training neural networks with sub-linear memory complexity.</p>
+    <h1>Control Under Communication Constraints</h1>
+    <p class="project-hero-sub">Imperfect communication induces partial observability at the controller. Different from general partial observable Markov decision processes (POMDP),
+    communication-induced partial observability usually has  a distinctive information structure, 
+      making the problem a tractable and practically important subclass of partially observable Markov decision process (POMDP).
+</p>
+    <p class="project-hero-tldr"> </p>
     <div class="hero-links">
       <a class="btn btn-ghost" href="#">GitHub</a>
         <a class="btn btn-ghost" href="#">Paper (arXiv)</a>
@@ -840,7 +843,6 @@
 
 <div class="shell">
   <div style="padding: 48px 0 180px;">
-    <p class="md-edit-hint">// 编辑下方 markdown 变量即可更新页面内容</p>
     <div class="md-content" id="md-body"></div>
   </div>
 
@@ -848,72 +850,34 @@
     <h2 style="font-family:var(--serif);font-size:1.35rem;font-weight:400;letter-spacing:-0.01em;margin-bottom:1.4rem;">Related Publications</h2>
     <div class="pub-list">
           <div class="pub-item">
-            <span class="pub-year">2024</span>
-            <div class="pub-body">
-              <div class="pub-title">SketchGrad: Memory-Efficient Training at Scale</div>
-              <div class="pub-authors"><strong>G. Chen</strong>, M. Kowalski</div>
-              <div class="pub-venue">ICML 2024 · Vienna, Austria</div>
-              <div class="pub-links">
-                <a class="pub-link" data-type="doi" href="#">DOI</a>
-            <a class="pub-link" data-type="arxiv" href="#">arXiv</a>
-              </div>
-            </div>
+        <span class="pub-year">2026</span>
+        <div class="pub-body">
+          <div class="pub-title">Intermittently Observable Markov Decision Processes</div>
+          <div class="pub-authors"><strong>Gongpu Chen</strong> and Soung Chang Liew</div>
+          <div class="pub-venue">IEEE Transactions on Automatic Control · Vol. 71, no. 2, pp. 1054-1069</div>
+          <div class="pub-links">
+            <a class="pub-link" data-type="doi"   href="https://ieeexplore.ieee.org/abstract/document/11142745">DOI</a>
+            <a class="pub-link" data-type="arxiv" href="https://arxiv.org/abs/2302.11761">arXiv</a>
           </div>
-          <div class="pub-item">
-            <span class="pub-year">2025</span>
-            <div class="pub-body">
-              <div class="pub-title">Differential Privacy Bounds for Distributed Stochastic Gradient Descent</div>
-              <div class="pub-authors"><strong>G. Chen</strong>, T. Nguyen, H. Wang</div>
-              <div class="pub-venue">Journal of Machine Learning Research · Vol. 26</div>
-              <div class="pub-links">
-                <a class="pub-link" data-type="doi" href="#">DOI</a>
-            <a class="pub-link" data-type="arxiv" href="#">arXiv</a>
-              </div>
-            </div>
+          <div class="pub-tags">
+            <span class="tag">MDP</span>
+            <span class="tag">Planning</span>
           </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <script>
-const markdownContent = `## Overview
+const markdownContent = `## Intermittently Observable Markov Decision Processes
 
-SketchML applies randomized dimensionality reduction to compress gradient updates on-the-fly, enabling training of models that would otherwise not fit in memory.
 
-## Sketching Operator
+## Truncated approximation
 
-Given gradient $g \\in \\mathbb{R}^d$, the Count-Sketch operator $S \\in \\mathbb{R}^{k \\times d}$ ($k \\ll d$) compresses it to:
 
-$$
-\\tilde{g} = Sg \\in \\mathbb{R}^k
-$$
 
-The update rule becomes:
 
-$$
-w_{t+1} = w_t - \\eta \\cdot S^\\top \\tilde{g}_t
-$$
-
-We prove convergence at rate $O\\!\\left(\\frac{1}{\\sqrt{T}} + \\frac{d}{k\\sqrt{T}}\\right)$ under standard assumptions.
-
-## Memory Comparison
-
-| Method | Optimizer State | Accuracy Drop |
-|--------|----------------|---------------|
-| Adam (baseline) | 1.8 GB | — |
-| SketchML ($k=d/4$) | 450 MB | 0.2% |
-| SketchML ($k=d/8$) | 240 MB | 0.3% |
-
-## Installation
-
-\`\`\`bash
-pip install sketchml
-\`\`\`
-
-\`\`\`python
-from sketchml import SkethedAdam
-optimizer = SketchedAdam(model.parameters(), sketch_ratio=0.125)
-\`\`\`
 `;
 document.getElementById('md-body').innerHTML = marked.parse(markdownContent);
 if (window.MathJax) {
@@ -925,7 +889,7 @@ if (window.MathJax) {
 
 <footer style="border-top: 1px solid var(--border); padding: 2rem 0;">
   <div style="max-width:860px; margin:0 auto; padding: 0 2rem; display:flex; justify-content:space-between; align-items:center; font-family:var(--mono); font-size:16px; color:var(--ink-light); letter-spacing:0.04em;">
-    <span>© 2025 Gongpu Chen</span>
+    <span>© 2026 Gongpu Chen</span>
     <span><a href="../index.html" style="color:var(--ink-light);text-decoration:none;font-family:var(--mono);font-size:16px;">← Back to homepage</a></span>
   </div>
 </footer>
