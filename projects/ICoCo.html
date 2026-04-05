@@ -826,8 +826,9 @@
     <div class="project-hero-icon">⚡</div>
     <h1>Integrated Communication and Control</h1>
     <p class="project-hero-sub">Integrated Communication and Control (ICoCo) is a novel framework based on implicit communication, 
-      enabling agents to exchange information and coordinate without explicit communication channels.</p>
-    <p class="project-hero-tldr">The key idea of implicit communication is that the control plant itself can serve as a communication channel.</p>
+      enabling agents to exchange information and coordinate without explicit communication channels.
+      The key idea is that the control plant itself can serve as a communication channel.</p>
+    <p class="project-hero-tldr"></p>
     <div class="hero-links">
       <a class="btn btn-ghost" href="#">GitHub</a>
         <a class="btn btn-ghost" href="#">Docs</a>
@@ -891,39 +892,27 @@
 </div>
 
 <script>
-const markdownContent = `## Overview
+const markdownContent = `## Implicit communication in control systems
 
-FedBench provides a unified evaluation suite for federated learning algorithms, covering the full spectrum of practical challenges.
+Implicit communication is widespread in nature and human society.
+A representative example is starling murmuration, where birds do not rely on verbal or other explicit communication channels; 
+instead, they exchange information through their motion trajectories. By observing the movements of nearby neighbors, each bird coordinates its behavior with the flock. 
+Similar phenomena can be found in fish schooling, honeybee waggle dances, and firefly synchronization.
 
-## Problem Setting
 
-In federated learning, $N$ clients each hold local data $\\mathcal{D}_i$. The global objective is:
 
-$$
-\\min_{w} \\sum_{i=1}^{N} \\frac{|\\mathcal{D}_i|}{|\\mathcal{D}|} \\mathcal{L}_i(w)
-$$
+## Integrated Communication and Control
 
-where $\\mathcal{L}_i(w) = \\mathbb{E}_{(x,y) \\sim \\mathcal{D}_i}[\\ell(f_w(x), y)]$.
 
-## Benchmark Tasks
 
-- **Vision**: CIFAR-10, CIFAR-100, TinyImageNet
-- **NLP**: Shakespeare, Reddit comments
-- **Tabular**: ADULT, MIMIC-III
+## Application in Decentralized Control
 
-## Supported Algorithms
 
-| Algorithm | Paper | Heterogeneity |
-|-----------|-------|---------------|
-| FedAvg | McMahan et al. 2017 | Low |
-| FedProx | Li et al. 2020 | Medium |
-| SCAFFOLD | Karimireddy et al. 2020 | High |
 
 ## Quick Start
 
 \`\`\`bash
-pip install fedbench
-fedbench run --algorithm fedavg --dataset cifar10 --clients 100
+pip install 
 \`\`\`
 `;
 document.getElementById('md-body').innerHTML = marked.parse(markdownContent);
